@@ -11,5 +11,8 @@
             "email": "dasharya299@me.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": [
+  "bin/brain-games"
+]
 }

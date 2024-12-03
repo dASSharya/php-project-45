@@ -1,0 +1,15 @@
+{
+    "name": "hexlet/code",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dASSharya",
+            "email": "dasharya299@me.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,2 +1,9 @@
 #!/usr/bin/env php
-Welcome to the Brain Games!
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php'; 
+require_once __DIR__ . '/../src/cli.php';
+
+use function src\cli\start; 
+
+start();

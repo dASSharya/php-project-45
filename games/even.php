@@ -25,14 +25,16 @@ if (!function_exists(__NAMESPACE__ . '\start')) {
     }
 }
 
+
 function evenGame()
 {
     $name = start();
+
     function description()
     {
         line("Answer 'yes' if the number is even, otherwise answer 'no'.");
     }
-    function randomNumb()
+    function randomNumb($name)
     {
         $randomN = rand(1, 100);
         line("Question: {$randomN}");
@@ -49,7 +51,7 @@ function evenGame()
     }
     description();
     for ($i = 0; $i < 3; $i++) {
-        randomNumb();
+        randomNumb($name);
     }
     line("Congratulations, {$name}!");
 }

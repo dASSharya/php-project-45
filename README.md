@@ -4,3 +4,5 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/627e98431be6bbf26f8c/test_coverage)](https://codeclimate.com/github/dASSharya/php-project-45/test_coverage)
 
 [![asciicast](https://asciinema.org/a/4EyKzwOs0S3hpAroDS7BYM37P.svg)](https://asciinema.org/a/4EyKzwOs0S3hpAroDS7BYM37P)
+
+[![asciicast](https://asciinema.org/a/ZB1aJeZTINoX2p6A6g4GJ9C4G.svg)](https://asciinema.org/a/ZB1aJeZTINoX2p6A6g4GJ9C4G)

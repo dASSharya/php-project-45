@@ -6,7 +6,9 @@ require_once __DIR__ . '/../vendor/autoload.php'; // Подключаем авт
 require_once __DIR__ . '/../helpers/description.php';
 require_once __DIR__ . '/../helpers/congratulations.php';
 require_once __DIR__ . '/../helpers/compassion.php';
-require_once __DIR__ .'/../helpers/correctAnswer.php';
+require_once __DIR__ . '/../helpers/correctAnswer.php';
+require_once __DIR__ . '/../helpers/question.php';
+require_once __DIR__ . '/../helpers/comprasion.php';
 require_once __DIR__ . '/../src/cli.php';
 
 
@@ -16,7 +18,8 @@ use function helpers\description\description;
 use function helpers\congratulations\congrat;
 use function helpers\correctAnswer\correctAnswer;
 use function helpers\compassion\wrongAnswer;
-
+use function helpers\question\question;
+use function helpers\comprasion\comprasion;
 
 use function src\cli\start;
 
@@ -28,18 +31,12 @@ function isItParity($number)
 function randomNumb($name)
 {
     $randomN = rand(1, 100);
-    line("Question: {$randomN}");
+    question($randomN);
     $answer = prompt("Your answer");
 
     $correctAnswer = isItParity($randomN);
 
-    if ($answer === $correctAnswer) {
-      line("Debug: Correct answer given.");
-      correctAnswer();
-    } else {
-        wrongAnswer($answer, $correctAnswer, $name);
-        exit();
-    }
+    comprasion($answer, $correctAnswer, $name);
 }
 
 function evenGame()

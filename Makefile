@@ -14,3 +14,5 @@ br-gcd:
 	./bin/brain-gcd
 br-prog:
 	./bin/brain-progression
+br-prime:
+	 ./bin/brain-prime

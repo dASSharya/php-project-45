@@ -24,12 +24,12 @@ use function helpers\comprasion\comprasion;
 
 function isItEven($numb)
 {
-  for ($i = round($numb / 2); $i > 1; $i--) {
-      if ($numb % $i === 0) {
-        return 'no';
-      }
-  }
-  return 'yes';
+    for ($i = round($numb / 2); $i > 1; $i--) {
+        if ($numb % $i === 0) {
+            return 'no';
+        }
+    }
+    return 'yes';
 }
 
 function expression($name)
@@ -38,7 +38,7 @@ function expression($name)
 
     question($randomN1);
     $correctAnswer = isItEven($randomN1);
-  
+
     $answerStr = prompt('Your answer');
     $answer = $answerStr;
     comprasion($answer, $correctAnswer, $name);

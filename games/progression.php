@@ -31,8 +31,7 @@ function expression($name)
 
     $array = [$randomN1];
 
-    for ($i = 1; $i < 10; $i++) 
-    {
+    for ($i = 1; $i < 10; $i++) {
         $array[] = $array[$i - 1] + $randomSummand;
     }
 

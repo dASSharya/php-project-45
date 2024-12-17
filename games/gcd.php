@@ -24,16 +24,16 @@ use function helpers\comprasion\comprasion;
 
 function nod($randomN1, $randomN2)
 {
-      if ($randomN1 >= $randomN2) {
+    if ($randomN1 >= $randomN2) {
         for ($i = $randomN2; $i > 0; $i--) {
             if ($randomN1 % $i === 0 && $randomN2 % $i === 0) {
                 return $i;
-        }
+            }
         }
     } else {
         for ($j = $randomN1; $j > 0; $j--) {
             if ($randomN2 % $j === 0 && $randomN1 % $j === 0) {
-              return $j;
+                return $j;
             }
         }
     }

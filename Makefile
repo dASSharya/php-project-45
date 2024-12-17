@@ -12,3 +12,5 @@ br-calc:
 	./bin/brain-calc
 br-gcd:
 	./bin/brain-gcd
+br-prog:
+	./bin/brain-progression

@@ -10,4 +10,5 @@ br-even:
 	./bin/brain-even
 br-calc:
 	./bin/brain-calc
-
+br-gcd:
+	./bin/brain-gcd

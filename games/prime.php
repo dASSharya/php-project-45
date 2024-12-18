@@ -47,7 +47,7 @@ function expression($name)
 function primeGame()
 {
     $name = start();
-    $text = "Answer 'yes' if given number is prime. Otherwise answer 'no'";
+    $text = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
     description($text);
 

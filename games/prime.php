@@ -34,7 +34,7 @@ function isItEven($numb)
 
 function expression($name)
 {
-    $randomN1 = rand(1, 100);
+    $randomN1 = rand(2, 100);
 
     question($randomN1);
     $correctAnswer = isItEven($randomN1);

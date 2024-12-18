@@ -51,6 +51,7 @@ function progressionGame()
 {
     $name = start();
     $text = "What number is missing in the progression?";
+
     description($text);
 
     for ($i = 0; $i < 3; $i++) {

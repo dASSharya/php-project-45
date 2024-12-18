@@ -42,7 +42,7 @@ function randomNumb($name)
 function evenGame()
 {
     $name = start();
-    $text = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+    $text = 'Answer "yes" if the number is even, otherwise answer "no".';
 
     description($text);
 

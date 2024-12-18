@@ -28,18 +28,4 @@ jobs:
       
       - name: Run linter
         run: make lint
-      
-      # Publish code coverage on Code Climate
-      # https://github.com/paambaati/codeclimate-action
-      
-      - name: Run test & publish code coverage
-        uses: paambaati/codeclimate-action@v5
         
-        env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-          JACOCO_SOURCE_PATH: src/main/java
-        
-        with:
-          coverageCommand: make test-coverage
-          coverageLocations: ${{ github.workspace }}/app/build/reports/jacoco/test/jacocoTestReport.xml:jacoco
-          debug: true

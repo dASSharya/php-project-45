@@ -20,7 +20,7 @@ function randomNumb($name)
 
     if ($answer === $correctAnswer) {
         line("Debug: Correct answer given.");
-      correctAnswer();
+        correctAnswer();
     } else {
         wrongAnswer($answer, $correctAnswer, $name);
           exit();

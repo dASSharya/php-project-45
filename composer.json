@@ -5,7 +5,7 @@
             "Hexlet\\Code\\": "src/"
         },
         "files": [
-            "src/сli.php"
+          "src/cli.php"
         ]
     },
     "authors": [

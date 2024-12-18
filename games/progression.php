@@ -36,7 +36,7 @@ function expression($name)
     }
 
     $arrayWithEllipsis = $array;
-    $arrayWithEllipsis[$randomIndexOFEllipsis - 1] = '...';
+    $arrayWithEllipsis[$randomIndexOFEllipsis - 1] = '..';
     $expression = implode(' ', $arrayWithEllipsis);
 
     question($expression);

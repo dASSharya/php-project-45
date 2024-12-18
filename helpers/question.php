@@ -11,5 +11,5 @@ use function cli\prompt;
 
 function question($randomN)
 {
-  line("Question: {$randomN}");
+    line("Question: {$randomN}");
 }

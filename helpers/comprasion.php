@@ -16,10 +16,10 @@ use function cli\prompt;
 
 function comprasion($answer, $correctAnswer, $name)
 {
-  if ($answer === $correctAnswer) {
-    correctAnswer();
-  } else {
-      wrongAnswer($answer, $correctAnswer, $name);
-      exit();
-  }
+    if ($answer === $correctAnswer) {
+        correctAnswer();
+    } else {
+        wrongAnswer($answer, $correctAnswer, $name);
+        exit();
+    }
 }

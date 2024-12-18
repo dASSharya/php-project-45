@@ -8,7 +8,7 @@ require_once __DIR__ . '/../vendor/autoload.php'; // Подключаем авт
 use function cli\line; // Импортируем функцию line
 use function cli\prompt;
 
-function congrat($name) 
+function congrat($name)
 {
-  line("Congratulations, {$name}!");
+    line("Congratulations, {$name}!");
 }

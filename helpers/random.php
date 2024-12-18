@@ -19,15 +19,10 @@ function randomNumb($name)
     $correctAnswer = isItParity($randomN);
 
     if ($answer === $correctAnswer) {
-      line("Debug: Correct answer given.");
+        line("Debug: Correct answer given.");
       correctAnswer();
     } else {
         wrongAnswer($answer, $correctAnswer, $name);
-        exit();
+          exit();
     }
-}
-
-function random()
-{
-  
 }

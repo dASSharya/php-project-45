@@ -10,5 +10,5 @@ use function cli\prompt;
 
 function description($text)
 {
-  line($text);
+    line($text);
 }

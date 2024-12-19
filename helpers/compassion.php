@@ -11,7 +11,7 @@ use function helpers\correctAnswer\correctAnswer;
 use function cli\line; // Импортируем функцию line
 use function cli\prompt;
 
-function wrongAnswer(string $answer, string $correctAnswer, string $name)
+function wrongAnswer(string|int $answer, string|int $correctAnswer, string $name)
 {
     line("{$answer} is wrong answer ;(. Correct answer was {$correctAnswer}.");
     line("Let's try again, {$name}!");

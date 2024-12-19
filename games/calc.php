@@ -23,7 +23,7 @@ use function helpers\comprasion\comprasion;
 
 use function src\cli\start;
 
-function randomChar(string $chars)
+function randomChar(array $chars)
 {
     $chars = ['+', "-", "*"];
     $length = count($chars);
@@ -31,7 +31,7 @@ function randomChar(string $chars)
     return $chars[$randIndex];
 }
 
-function expression(string $chars, string $name)
+function expression(array $chars, string $name)
 {
     $randomN1 = rand(1, 100);
     $randomN2 = rand(1, 10);

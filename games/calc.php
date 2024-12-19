@@ -41,8 +41,12 @@ function expression(array $chars, string $name)
     question($expression);
 
     $correctAnswer = eval("return $expression;");
+    
+    
     $answerStr = prompt('Your answer');
     $answer = (int)$answerStr;
+    $typeOfCorrectAnswer = gettype($answer);
+    line($typeOfCorrectAnswer);
     comprasion($answer, $correctAnswer, $name);
 }
 

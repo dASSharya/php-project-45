@@ -22,7 +22,7 @@ use function helpers\compassion\wrongAnswer;
 use function helpers\question\question;
 use function helpers\comprasion\comprasion;
 
-function nod($randomN1, $randomN2)
+function nod(int $randomN1, int $randomN2)
 {
     if ($randomN1 >= $randomN2) {
         for ($i = $randomN2; $i > 0; $i--) {
@@ -39,7 +39,7 @@ function nod($randomN1, $randomN2)
     }
 }
 
-function expression($name)
+function expression(string $name)
 {
     $randomN1 = rand(1, 100);
     $randomN2 = rand(1, 100);

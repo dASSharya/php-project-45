@@ -22,7 +22,7 @@ use function helpers\compassion\wrongAnswer;
 use function helpers\question\question;
 use function helpers\comprasion\comprasion;
 
-function isItEven($numb)
+function isItEven(int $numb)
 {
     for ($i = round($numb / 2); $i > 1; $i--) {
         if ($numb % $i === 0) {
@@ -32,7 +32,7 @@ function isItEven($numb)
     return 'yes';
 }
 
-function expression($name)
+function expression(string $name)
 {
     $randomN1 = rand(2, 100);
 

@@ -23,7 +23,7 @@ use function helpers\question\question;
 use function helpers\comprasion\comprasion;
 
 
-function expression($name)
+function expression(string $name)
 {
     $randomN1 = rand(1, 100);
     $randomSummand = rand(1, 10);

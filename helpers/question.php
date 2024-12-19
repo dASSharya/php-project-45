@@ -9,7 +9,7 @@ use function cli\line; // Импортируем функцию line
 use function cli\prompt;
 
 
-function question($randomN)
+function question(string $randomN)
 {
     line("Question: {$randomN}");
 }

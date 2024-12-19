@@ -23,12 +23,12 @@ use function helpers\comprasion\comprasion;
 
 use function src\cli\start;
 
-function isItParity($number)
+function isItParity(int $number)
 {
       return $number % 2 === 0 ? 'yes' : 'no';
 }
 
-function randomNumb($name)
+function randomNumb(string $name)
 {
     $randomN = rand(1, 100);
     question($randomN);

@@ -14,7 +14,7 @@ use function helpers\compassion\wrongAnswer;
 use function cli\line; // Импортируем функцию line
 use function cli\prompt;
 
-function comprasion(string $answer, string $correctAnswer, string $name)
+function comprasion(string|int $answer, string $correctAnswer, string $name)
 {
     if ($answer === $correctAnswer) {
         correctAnswer();
